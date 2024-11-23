@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className={`relative overflow-hidden w-full h-auto mt-72`}>
+    <div className={`relative overflow-hidden w-full h-auto mt-28 sm:mt-52`}>
       <div className="absolute left-0 right-0 top-0 w-full">
         <Image
           src={"/assets/bg-hero.png"}
@@ -13,6 +13,7 @@ export default function HeroSection() {
           width={720}
           height={720}
           layout="responsive"
+          quality={30}
           priority
         />
       </div>
@@ -42,7 +43,9 @@ export default function HeroSection() {
               alt="cta image"
               width={1180}
               height={671}
-              loading="lazy"
+              layout="responsive"
+              quality={30}
+              priority
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
@@ -50,7 +53,8 @@ export default function HeroSection() {
                 alt="cta image"
                 width={155}
                 height={155}
-                loading="lazy"
+                quality={30}
+                priority
                 className="group-hover:animate-pulse"
               />
             </div>

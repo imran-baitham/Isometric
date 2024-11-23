@@ -4,7 +4,7 @@ import { classNames } from "@/utils";
 
 export default function HeadSection() {
   return (
-    <div className={`relative py-20 sm:py-28`}>
+    <div className={`relative py-10 sm:py-28`}>
       <Container className="relative flex items-center justify-center h-full">
         <div>
           <h1

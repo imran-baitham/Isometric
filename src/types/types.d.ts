@@ -8,7 +8,7 @@ interface NavProps {
   slug: string;
 }
 
-export interface TCtaSection {
+interface TCtaSection {
   id: number;
   title: string;
   description: string;
@@ -16,4 +16,10 @@ export interface TCtaSection {
   imagePosition: "left" | "right";
 }
 
-export { ChildrenProps, NavProps, TCtaSection };
+interface FeatureProps {
+  featureImg: string;
+  title: string;
+  description: string;
+}
+
+export { ChildrenProps, NavProps, TCtaSection, FeatureProps };

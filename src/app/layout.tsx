@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { ChildrenProps } from "@/types";
 import { inter } from "@/fonts";
+import { Header } from "@/components";
 
 export const metadata: Metadata = {
   title: "Isometric",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-brand-primary antialiased`}>
+        <Header />
         {children}
       </body>
     </html>

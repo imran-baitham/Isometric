@@ -4,7 +4,7 @@ export const NavData: NavProps[] = [
   {
     name: "Product",
     link: "/",
-    slug: "product",
+    slug: "/",
   },
   {
     name: "Solution",

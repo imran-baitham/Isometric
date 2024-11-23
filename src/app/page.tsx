@@ -4,6 +4,7 @@ import {
   HeadSection,
   HeroSection,
   StartSection,
+  FeatureSection,
 } from "@/components";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="w-full">
       <HeroSection />
       <HeadSection />
+      <FeatureSection />
       <CTASection />
       <StartSection />
       <Footer />
