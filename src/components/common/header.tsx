@@ -89,6 +89,7 @@ function Header() {
           <div className="grid grid-cols-1 gap-3 px-2 py-4">
             {NavData.map((item, index) => (
               <Link
+                key={index}
                 href={item.slug}
                 className={classNames(
                   "text-xl font-medium transition-colors block",
