@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #fed425;
+    --secondary: #3f2b20;
+    --tertiary: #6edc00;
+
+    --brand-primary: #ffefc9;
+    --brand-secondary: #ffe7ad;
+    --brand-tertiary: #ffffff;
+
+    --brand-effect: #f3e4c3;
+  }
+}
