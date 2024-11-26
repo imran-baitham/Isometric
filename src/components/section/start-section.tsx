@@ -6,23 +6,23 @@ import { classNames } from "@/utils";
 export default function StartSection() {
   return (
     <div
-      className={`relative overflow-hidden h-[60vh] md:h-[50vh] lg:h-[60vh] xl:h-[90vh] w-full`}
+      className={`relative overflow-hidden h-[35vh] md:h-[50vh] lg:h-[60vh] xl:h-[90vh] w-full`}
     >
       <div className="absolute left-0 top-0 w-full">
         <Image
-          src={"/assets/bg-last.png"}
+          src={"/assets/bg-last.svg"}
           alt="background"
           width={720}
           height={420}
           layout="responsive"
-          priority
+          loading="lazy"
         />
       </div>
       <Container className="relative flex items-center justify-center h-full">
         <div>
           <h1
             className={classNames(
-              "text-3xl md:text-6xl font-extrabold tracking-wide text-secondary text-center text-balance",
+              "text-4xl md:text-6xl font-extrabold tracking-tight text-secondary text-center text-balance",
               Neuton_font.className
             )}
           >

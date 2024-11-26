@@ -1,19 +1,18 @@
+import Image from "next/image";
 import { Button, Container } from "@/components";
 import { Neuton_font } from "@/fonts";
 import { classNames } from "@/utils";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <div className={`relative overflow-hidden w-full h-auto mt-28 sm:mt-52`}>
       <div className="absolute left-0 right-0 top-0 w-full">
         <Image
-          src={"/assets/bg-hero.png"}
+          src={"/assets/hero.svg"}
           alt="background"
           width={720}
           height={720}
           layout="responsive"
-          quality={30}
           priority
         />
       </div>
@@ -22,13 +21,13 @@ export default function HeroSection() {
           <div className="pb-28">
             <h1
               className={classNames(
-                "text-3xl md:text-7xl font-extrabold tracking-wide text-secondary text-center text-balance",
+                "text-5xl md:text-7xl font-extrabold tracking-tight text-secondary text-center text-balance",
                 Neuton_font.className
               )}
             >
               Gamify Your Way Into
               <br className="max-sm:hidden" />
-              <span className="text-tertiary">Peak Productivity</span>
+              <span className="text-tertiary"> Peak Productivity</span>
             </h1>
             <p className="text-balance max-w-5xl mx-auto text-center text-sm md:text-xl tracking-wide font-semibold py-4 mb-5">
               Build your city, build your focus—one task at a time

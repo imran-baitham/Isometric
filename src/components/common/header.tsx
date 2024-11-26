@@ -12,7 +12,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-2 sm:top-8 left-0 right-0 z-40 max-md:px-2">
+    <header className="absolute w-full top-2 sm:top-8 left-0 right-0 z-40 max-md:px-2">
       <Container className="bg-brand-tertiary rounded-2xl sm:rounded-[20px] drop-shadow-sm">
         <div className="flex justify-between h-16 sm:h-[5.5rem] sm:px-5">
           <div className="flex items-center justify-between w-full">

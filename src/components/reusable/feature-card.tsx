@@ -24,13 +24,15 @@ export function FeatureCard({ featureImg, title, description }: FeatureProps) {
 
       <h3
         className={classNames(
-          "text-[26px] font-serif font-bold mb-2 text-[#3A2E26] tracking-normal max-lg:leading-8",
+          "text-2xl md:text-[26px] font-serif font-bold mb-2 text-[#3A2E26] tracking-normal max-lg:leading-8",
           Neuton_font.className
         )}
       >
         {title}
       </h3>
-      <p className="leading-relaxed text-balance">{description}</p>
+      <p className="max-md:text-sm leading-relaxed text-balance">
+        {description}
+      </p>
     </div>
   );
 }
