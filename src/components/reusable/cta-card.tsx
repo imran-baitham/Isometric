@@ -52,7 +52,7 @@ export function CtaCard({
           <div className="w-full relative">
             <div className="bg-secondary rounded-[18px] absolute h-[200px] w-full md:h-[340px] md:w-[506px] translate-y-2 -translate-x-2" />
             <div className="group relative h-[200px] w-full md:h-[340px] md:w-[506px] cursor-pointer rounded-[18px] border-2 border-black overflow-hidden">
-              <div className="max-sm:hidden flex absolute top-0 left-0 w-full h-full justify-center items-center space-x-4 z-10">
+              <div className="flex absolute top-0 left-0 w-full h-full justify-center items-center space-x-4 z-10">
                 {!isPlaying && (
                   <button onClick={handlePlay}>
                     <Image

@@ -82,15 +82,18 @@ export default function HeroSection() {
               className="w-full h-full object-cover"
             />
 
-            <div className="max-sm:hidden flex absolute top-0 left-0 w-full h-full justify-center items-center space-x-4 z-10">
+            <div className="flex absolute top-0 left-0 w-full h-full justify-center items-center z-10">
               {!isPlaying && (
-                <button onClick={handlePlay}>
+                <button
+                  onClick={handlePlay}
+                  className="w-[90px] h-[90px] sm:w-[155px] sm:h-[155px]"
+                >
                   <Image
                     src={"/assets/play.png"}
                     alt="cta image"
+                    layout="responsive"
                     width={155}
                     height={155}
-                    quality={30}
                     priority
                     className="group-hover:animate-pulse"
                   />
@@ -99,14 +102,14 @@ export default function HeroSection() {
               {isPlaying && (
                 <button
                   onClick={handleStop}
-                  className="md:group-hover:flex md:hidden"
+                  className="group-hover:flex md:hidden sm:w-[155px] sm:h-[155px]"
                 >
                   <Image
                     src={"/assets/stop.png"}
                     alt="cta image"
+                    layout="responsive"
                     width={155}
                     height={155}
-                    quality={30}
                     priority
                   />
                 </button>
