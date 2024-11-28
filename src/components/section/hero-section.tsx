@@ -25,7 +25,26 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative w-full h-auto mt-28 sm:mt-52 bg-[url(/assets/hero.svg)] bg-no-repeat bg-center">
+    <div className="relative w-full h-auto mt-28 sm:mt-52 overflow-hidden">
+      <div className="absolute inset-0 w-[200%] h-full animate-cloud">
+        {/* DON'T REMOVE */}
+        {/* Two identical backgrounds are needed for seamless infinite scrolling - the second div takes the place of the first during animation */}
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center"></div>
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center translate-x-full"></div>
+      </div>
+      <style jsx>{`
+        @keyframes cloud {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-cloud {
+          animation: cloud 240s linear infinite;
+        }
+      `}</style>
       <Container className="relative">
         <>
           <div className="pb-28">
