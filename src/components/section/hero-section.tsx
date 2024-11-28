@@ -25,17 +25,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative overflow-hidden w-full h-auto mt-28 sm:mt-52">
-      <div className="absolute left-0 right-0 top-0 w-full">
-        <Image
-          src={"/assets/hero.svg"}
-          alt="background"
-          width={720}
-          height={720}
-          layout="responsive"
-          priority
-        />
-      </div>
+    <div className="relative w-full h-auto mt-28 sm:mt-52 bg-[url(/assets/hero.svg)] bg-no-repeat bg-center">
       <Container className="relative">
         <>
           <div className="pb-28">

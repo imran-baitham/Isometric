@@ -3,7 +3,6 @@ import { Neuton_font } from "@/fonts";
 import { TCtaSection } from "@/types";
 import { classNames } from "@/utils";
 import { CtaCard } from "../reusable/cta-card";
-import Image from "next/image";
 
 export const ctaSections: TCtaSection[] = [
   {
@@ -42,17 +41,7 @@ export const ctaSections: TCtaSection[] = [
 
 export default function CTASection() {
   return (
-    <div className={`relative overflow-hidden w-full`}>
-      <div className="absolute left-0 right-0 top-0 w-full">
-        <Image
-          src={"/assets/bg-cta.svg"}
-          alt="background"
-          width={720}
-          height={720}
-          layout="responsive"
-          loading="lazy"
-        />
-      </div>
+    <div className="relative w-full bg-[url(/assets/bg-cta.svg)] bg-no-repeat bg-top">
       <Container className="relative">
         <>
           <h1

@@ -1,23 +1,10 @@
-import Image from "next/image";
 import { Button, Container } from "@/components";
 import { Neuton_font } from "@/fonts";
 import { classNames } from "@/utils";
 
 export default function StartSection() {
   return (
-    <div
-      className={`relative overflow-hidden h-[35vh] md:h-[50vh] lg:h-[60vh] xl:h-[90vh] w-full`}
-    >
-      <div className="absolute left-0 top-0 w-full">
-        <Image
-          src={"/assets/bg-last.svg"}
-          alt="background"
-          width={720}
-          height={420}
-          layout="responsive"
-          loading="lazy"
-        />
-      </div>
+    <div className="relative w-full bg-[url(/assets/bg-last.svg)] bg-no-repeat bg-center py-40 lg:py-96">
       <Container className="relative flex items-center justify-center h-full">
         <div>
           <h1
