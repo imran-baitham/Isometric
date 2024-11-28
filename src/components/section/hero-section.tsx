@@ -30,6 +30,28 @@ export default function HeroSection() {
         <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center"></div>
         <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center translate-x-full"></div>
       </div>
+      <div className="container relative mx-auto">
+        <div className="absolute -left-12 sm:left-0 top-20 lg:top-16 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
+          <Image
+            src={"/assets/blocks/block-1.svg"}
+            alt="block one"
+            width={252}
+            height={340}
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
+        <div className="absolute -right-12 sm:right-0 top-52 lg:top-28 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
+          <Image
+            src={"/assets/blocks/block-2.svg"}
+            alt="block two"
+            width={252}
+            height={340}
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
+      </div>
       <Container className="relative">
         <>
           <div className="pb-28">
