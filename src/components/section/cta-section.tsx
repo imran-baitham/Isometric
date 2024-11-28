@@ -41,7 +41,11 @@ export const ctaSections: TCtaSection[] = [
 
 export default function CTASection() {
   return (
-    <div className="relative w-full bg-[url(/assets/bg-cta.svg)] bg-no-repeat bg-top">
+    <div className="relative w-full overflow-hidden">
+      <div className="absolute inset-0 w-[200%] h-full animate-cloud">
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-top"></div>
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-top translate-x-full"></div>
+      </div>
       <Container className="relative">
         <>
           <h1

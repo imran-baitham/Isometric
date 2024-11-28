@@ -4,7 +4,11 @@ import { classNames } from "@/utils";
 
 export default function StartSection() {
   return (
-    <div className="relative w-full bg-[url(/assets/bg-last.svg)] bg-no-repeat bg-center py-40 lg:py-96">
+    <div className="relative w-full overflow-hidden py-40 lg:py-64">
+      <div className="absolute inset-0 w-[200%] h-full animate-cloud">
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center"></div>
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center translate-x-full"></div>
+      </div>
       <Container className="relative flex items-center justify-center h-full">
         <div>
           <h1

@@ -14,4 +14,17 @@
 
     --brand-effect: #f3e4c3;
   }
+
+  @keyframes cloud {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-cloud {
+    animation: cloud 240s linear infinite;
+  }
 }
