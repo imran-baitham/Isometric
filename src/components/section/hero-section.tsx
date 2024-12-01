@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center translate-x-full"></div>
       </div>
       <div className="container relative mx-auto">
-        <div className="absolute -left-12 sm:left-0 top-20 lg:top-16 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
+        <div className="absolute -left-16 sm:left-0 top-52 sm:top-40 lg:top-10 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
           <Image
             src={"/assets/blocks/block-1.svg"}
             alt="block one"
@@ -41,7 +41,7 @@ export default function HeroSection() {
             loading="lazy"
           />
         </div>
-        <div className="absolute -right-12 sm:right-0 top-52 lg:top-28 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
+        <div className="absolute -right-16 sm:right-0 top-52 lg:top-32 h-[120px] w-[120px] lg:h-[340px] lg:w-[252px]">
           <Image
             src={"/assets/blocks/block-2.svg"}
             alt="block two"
@@ -66,7 +66,8 @@ export default function HeroSection() {
               <span className="text-tertiary"> Peak Productivity</span>
             </h1>
             <p className="text-balance max-w-5xl mx-auto text-center text-sm md:text-xl tracking-wide font-semibold py-4 mb-5">
-              Build your city, build your focus—one task at a time
+              Build your city, build your <br className="sm:hidden" /> focus—one
+              task at a time
             </p>
             <Button center startIcon>
               Start Focusing
