@@ -36,7 +36,7 @@ function FeatureSection() {
           <div className="flex flex-col gap-8 md:col-span-2">
             <h2
               className={classNames(
-                "text-2xl md:text-4xl font-extrabold tracking-wide text-secondary",
+                "text-2xl md:text-4xl font-extrabold tracking-tight text-secondary",
                 Neuton_font.className
               )}
             >

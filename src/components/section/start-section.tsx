@@ -1,28 +1,42 @@
-import Image from "next/image";
 import { Button, Container } from "@/components";
 import { Neuton_font } from "@/fonts";
 import { classNames } from "@/utils";
+import Image from "next/image";
 
 export default function StartSection() {
   return (
-    <div
-      className={`relative overflow-hidden h-[60vh] md:h-[50vh] lg:h-[60vh] xl:h-[90vh] w-full`}
-    >
-      <div className="absolute left-0 top-0 w-full">
-        <Image
-          src={"/assets/bg-last.png"}
-          alt="background"
-          width={720}
-          height={420}
-          layout="responsive"
-          priority
-        />
+    <div className="relative w-full overflow-hidden py-32 lg:py-64">
+      <div className="absolute inset-0 w-[200%] h-full animate-cloud">
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center"></div>
+        <div className="absolute inset-0 w-full h-full bg-[url(/assets/hero-long.svg)] bg-repeat-x bg-center translate-x-full"></div>
+      </div>
+      <div className="container relative mx-auto">
+        <div className="absolute max-sm:-top-20 lg:-top-32 max-sm:-left-36 -left-48 lg:-left-64 xl:-left-20 h-[220px] w-[220px] lg:h-[350px] lg:w-[450px]">
+          <Image
+            src={"/assets/blocks/block-3.svg"}
+            alt="block one"
+            width={563}
+            height={358}
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
+        <div className="absolute max-sm:top-36 lg:top-16 max-sm:-right-36 -right-48 lg:-right-64 xl:-right-20 h-[220px] w-[220px] lg:h-[350px] lg:w-[450px]">
+          <Image
+            src={"/assets/blocks/block-4.svg"}
+            alt="block one"
+            width={563}
+            height={358}
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
       </div>
       <Container className="relative flex items-center justify-center h-full">
         <div>
           <h1
             className={classNames(
-              "text-3xl md:text-6xl font-extrabold tracking-wide text-secondary text-center text-balance",
+              "text-4xl md:text-6xl font-extrabold tracking-tight text-secondary text-center text-balance",
               Neuton_font.className
             )}
           >

@@ -9,11 +9,11 @@ export default function HeadSection() {
         <div>
           <h1
             className={classNames(
-              "text-3xl md:text-6xl font-extrabold tracking-wide text-secondary text-center text-balance",
+              "text-4xl md:text-6xl font-extrabold tracking-tight text-secondary text-center text-balance",
               Neuton_font.className
             )}
           >
-            Ready to Gamify your way into{" "}
+            Ready to Gamify your way <br className="max-md:hidden" /> into{" "}
             <span className="text-tertiary">Peak Productivity</span>?
           </h1>
           <p className="text-balance max-w-6xl mx-auto text-center text-xs sm:text-lg tracking-wide py-4 md:py-5">
