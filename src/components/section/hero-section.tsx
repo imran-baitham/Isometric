@@ -76,7 +76,7 @@ export default function HeroSection() {
           <div className="relative w-full h-auto group cursor-pointer overflow-hidden rounded-[24px] border-2 border-secondary">
             <video
               ref={videoRef}
-              src={"/elf_shadows-720p.mp4"}
+              src={"/elf_shadows-720p.mov"}
               loop
               width="506"
               height="340"
